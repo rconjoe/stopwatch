@@ -27,6 +27,8 @@ class StopwatchApp(App):
     def compose(self):
         yield Header(show_clock=True)
         yield Stopwatch()
+        yield Stopwatch()
+        yield Stopwatch()
         yield Footer()
 
     def action_toggle_dark_mode(self):
