@@ -25,6 +25,8 @@ class StopwatchApp(App):
         ("d", "toggle_dark_mode", "Toggle dark mode"),
     ]
 
+    CSS_PATH = "main.css"
+
     def compose(self):
         yield Header(show_clock=True)
         yield Footer()
