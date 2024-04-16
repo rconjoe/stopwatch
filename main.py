@@ -1,4 +1,5 @@
 from textual.app import App
+from textual.containers import ScrollableContainer
 from textual.widgets import (
     Header,
     Footer,
@@ -26,10 +27,11 @@ class StopwatchApp(App):
 
     def compose(self):
         yield Header(show_clock=True)
-        yield Stopwatch()
-        yield Stopwatch()
-        yield Stopwatch()
         yield Footer()
+        with ScrollableContainer(id="stopwatches"):
+            yield Stopwatch()
+            yield Stopwatch()
+            yield Stopwatch()
 
     def action_toggle_dark_mode(self):
         self.dark = not self.dark
