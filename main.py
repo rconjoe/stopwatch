@@ -78,7 +78,7 @@ class StopwatchApp(App):
     BINDINGS = [
         ("d", "toggle_dark_mode", "Toggle dark mode"),
         ("a", "add_stopwatch", "Add"),
-        ("r", "remove_stopwatch", "Add"),
+        ("r", "remove_stopwatch", "Remove"),
     ]
 
     CSS_PATH = "main.css"
