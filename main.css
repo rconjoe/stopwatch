@@ -7,6 +7,12 @@ Stopwatch {
 	height: 5;
 }
 
+TimeDisplay {
+	height: 3;
+	content-align: center middle;
+	text-opacity: 60%;
+}
+
 #start {
 	dock: left;
 }
@@ -14,6 +20,14 @@ Stopwatch {
 #stop {
 	dock: left;
 	display: none;
+}
+
+.started #start {
+	display: none;
+}
+
+.started #stop {
+	display: block;
 }
 
 #reset {
