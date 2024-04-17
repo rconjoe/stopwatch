@@ -4,8 +4,18 @@ Stopwatch {
 	background: $boost;
 	margin: 1;
 	padding: 1;
+	height: 5;
 }
 
-Button {
-	margin: 1;
+#start {
+	dock: left;
+}
+
+#stop {
+	dock: left;
+	display: none;
+}
+
+#reset {
+	dock: right;
 }
