@@ -81,7 +81,7 @@ class StopwatchApp(App):
         ("r", "remove_stopwatch", "Remove"),
     ]
 
-    CSS_PATH = "main.css"
+    CSS_PATH = "main.tcss"
 
     def compose(self):
         yield Header(show_clock=True)
